@@ -68,7 +68,7 @@ public class Questao {
             }
 
             // Verificando se a resposta está correta
-            if (questao.verificarResposta(respostaUsuario - 1)) {
+            if (questao.verificarResposta(respostaUsuario )) {
                 System.out.println("Resposta correta!\n");
                 pontuacao++;
             } else {
@@ -86,9 +86,14 @@ public class Questao {
      */
     public static Questao[] criarQuestoes() {
         return new Questao[] {
-            new Questao("Qual é a capital da Alemanha?", new String[]{"Roma", "Paris", "Madrid", "Berlim", "Londres"}, 2),
-            new Questao("Qual é a capital da França?", new String[]{"Roma", "Paris", "Madrid", "Berlim", "Londres"}, 1),
-            new Questao("Qual é a capital da França?", new String[]{"Roma", "Paris", "Madrid", "Berlim", "Londres"}, 0),
+            new Questao("Qual é a capital da Alemanha?", new String[]{"Roma", "Paris", "Berlim", "Madrid", "Londres"}, 3),
+            new Questao("Qual é a capital da França?", new String[]{"Paris", "Roma", "Madrid", "Berlim", "Londres"}, 1),
+            new Questao("Qual é a capital da Inglaterra?", new String[]{"Roma", "Paris", "Madrid", "Berlim", "Londres"}, 5),
         };
+    }
+    public static void main(String[] args) {
+        Questao[] questoes = criarQuestoes(); // Criando as questões usando o método auxiliar
+        Quiz quiz = new Quiz(questoes);
+        quiz.rodar(); // Rodando o quiz
     }
 }
