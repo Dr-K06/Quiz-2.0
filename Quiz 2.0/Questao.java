@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Questao {
     private String pergunta;
     private String[] opcoes;
