@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Questao {
     private String pergunta;
     private String[] opcoes;
@@ -78,6 +77,8 @@ public class Questao {
         }
 
         System.out.println("\nVocê terminou o quiz! Sua pontuação final é: " + pontuacao + "/" + questoes.length);
+        scanner.close();
+
     }
 
     // Método para criar as questões
