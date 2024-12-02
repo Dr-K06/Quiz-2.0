@@ -89,6 +89,8 @@ public class Questao {
             new Questao("Qual é a capital da Alemanha?", new String[]{"Roma", "Paris", "Berlim", "Madrid", "Londres"}, 3),
             new Questao("Qual é a capital da França?", new String[]{"Paris", "Roma", "Madrid", "Berlim", "Londres"}, 1),
             new Questao("Qual é a capital da Inglaterra?", new String[]{"Roma", "Paris", "Madrid", "Berlim", "Londres"}, 5),
+            new Questao("Qual é a capital do Brasil?", new String[]{"Roma", "Rio de Janeiro", "Madrid", "Brasília", "Londres"}, 4),
+
         };
     }
     public static void main(String[] args) {
